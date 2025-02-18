@@ -1,47 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+.container {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+h1 {
+    font-size: 4rem;
+    margin: 0;
     padding: 0;
+    text-shadow: 2px 2px #ff0000, 4px 4px #00ff00, 6px 6px #0000ff;
+    transform: rotate(-3deg);
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
+.instagram-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+    padding: 0.5rem;
+    border-radius: 5px;
+    animation: glitch 1s infinite;
+    position: relative;
 }
 
-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+    }
+    20% {
+        text-shadow: -2px -2px #ff0000, 2px 2px #00ff00;
+    }
+    40% {
+        text-shadow: 2px -2px #ff0000, -2px 2px #00ff00;
+    }
+    60% {
+        text-shadow: -2px 2px #ff0000, 2px -2px #00ff00;
+    }
+    80% {
+        text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+    }
+    100% {
+        text-shadow: -2px -2px #ff0000, 2px 2px #00ff00;
+    }
 }
