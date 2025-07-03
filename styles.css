@@ -26,14 +26,20 @@ html, body {
     margin: 1rem 0;
   }
 
-  .instagram-link {
+  .instagram-link, .address-link {
     font-size: 1.2rem;
     color: #282aba;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-bottom: 1rem;
     animation: pulse 2s infinite;
+    padding: 0.5rem 1rem;
+  }
+
+  .address-link {
+    margin-top: 1rem;
+  }
+
+  .instagram-link {
+    margin-bottom: 1rem;
   }
 
   @keyframes pulse {
