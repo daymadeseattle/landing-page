@@ -55,7 +55,7 @@ html, body {
 .icon {
   width: 3rem;
   height: 2.5rem;
-  fill: currentColor;
+  fill: #e7969e;;
   shape-rendering: geometricPrecision;
   transition: transform 0.2s ease;
 }
